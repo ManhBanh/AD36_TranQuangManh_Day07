@@ -3,4 +3,11 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="xanhduongnhat">#81E6D8</color>
+    <color name="xamnhat">#70443C3C</color>
+    <color name="den">#0E0E0E</color>
+    <color name="trang">#E9FDFDFD</color>
+    <color name="xanhduongvien">#1585DB</color>
+    <color name="xanhduongdam">#1277AD</color>
 </resources>

@@ -4,13 +4,16 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/avatar">
 
         <LinearLayout
+            android:id="@+id/linearlayout"
             android:layout_width="@dimen/_200sdp"
             android:layout_height="@dimen/_180sdp"
             android:layout_centerInParent="true"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/linearlayout_shape">
 
             <EditText
                 android:id="@+id/eUsername"
@@ -18,6 +21,7 @@
                 android:layout_height="@dimen/_24sdp"
                 android:hint="@string/username"
                 android:textSize="@dimen/_10sdp"
+                android:textColor="@color/den"
                 android:paddingLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_50sdp"
                 android:layout_marginLeft="@dimen/_30sdp"
@@ -30,20 +34,34 @@
                 android:layout_height="@dimen/_24sdp"
                 android:hint="@string/password"
                 android:textSize="@dimen/_10sdp"
+                android:textColor="@color/den"
                 android:paddingLeft="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginLeft="@dimen/_30sdp"
                 android:layout_marginRight="@dimen/_30sdp"
                 android:background="@drawable/textview_shape"/>
 
-            <Button
-                android:id="@+id/btnLogin"
+            <CheckBox
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/_24sdp"
-                android:text="@string/login"
-                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Nhớ mật khẩu"
+                android:textStyle="bold"
+                android:textColor="@color/xanhduongdam"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:background="@drawable/button_shape"/>
+                android:layout_marginLeft="@dimen/_30sdp"/>
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_centerInParent="true"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:textColor="@color/xanhduongdam"
+            android:layout_marginTop="-18sp"
+            android:background="@drawable/button_shape"
+            android:layout_below="@+id/linearlayout"/>
+
     </RelativeLayout>
 </layout>
